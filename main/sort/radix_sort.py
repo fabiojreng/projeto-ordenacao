@@ -1,6 +1,6 @@
 class RadixSort:
 
-    def countingSort(self, array, place):
+    def __countingSort(self, array, place):
         size = len(array)
         output = [0] * size
         count = [0] * 10
@@ -24,10 +24,9 @@ class RadixSort:
 
     def radixSort(self, array: list) -> list:
         max_element = max(array)
-
         place = 1
         while max_element // place > 0:
-            self.countingSort(array, place)
+            self.__countingSort(array, place)
             place *= 10
 
         return array

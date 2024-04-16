@@ -17,4 +17,3 @@ class Main:
 
 main_sort = Main()
 main_sort.run()
-print("Finalizado")
